@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import { GiMaterialsScience } from "react-icons/gi";
-import { FaArrowRightLong } from "react-icons/fa6";
+
 import Navbar from "./navbar";
 
 export default function LandingContent() {
@@ -49,19 +49,6 @@ export default function LandingContent() {
                                 />
                             </svg>
                         </Link>
-                    </div>
-                    <div>
-                        <a
-                            className="
-            text-white
-            flex items-center gap-2 text-lg text-gray-700 underline"
-                            href="/apply"
-                        >
-                            Become a participant{" "}
-                            <span>
-                                <FaArrowRightLong />
-                            </span>
-                        </a>
                     </div>
                 </div>
             </div>
