@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
+import { Link } from "react-router";
 
 export default function Navbar() {
     const [lang, setLang] = useState("EN");
@@ -80,18 +81,18 @@ export default function Navbar() {
                         </button>
                         <div className="h-6 w-px bg-gray-300" aria-hidden="true"></div>
 
-                        <a
-                            href="/about"
+                        <Link
+                            to="/about"
                             className={`${textColor} ${hoverBg} transition duration-300 px-3 py-2 rounded-md text-sm font-medium`}
                         >
                             About
-                        </a>
-                        <a
-                            href="/simulator"
+                        </Link>
+                        <Link
+                            to="/simulator"
                             className={`${textColor} ${hoverBg} transition duration-300 px-3 py-2 rounded-md text-sm font-medium`}
                         >
                             Simulator
-                        </a>
+                        </Link>
                     </div>
 
                     <div className="md:hidden">
