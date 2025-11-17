@@ -123,24 +123,20 @@ export default function Navbar() {
                         >
                             Language: {lang}
                         </button>
-                        <a
-                            href="/participate"
-                            className={`${textColor} block ${hoverBg} px-3 py-2 rounded-md text-sm font-medium transition duration-300 cursor-pointer`}
-                        >
-                            Participate
-                        </a>
-                        <a
-                            href="/about"
+
+
+                        <Link
+                            to="/about"
                             className={`${textColor} block ${hoverBg} px-3 py-2 rounded-md text-sm font-medium transition duration-300 cursor-pointer`}
                         >
                             About
-                        </a>
-                        <a
-                            href="/simulator"
+                        </Link>
+                        <Link
+                            to="/simulator"
                             className={`${textColor} block ${hoverBg} px-3 py-2 rounded-md text-sm font-medium transition duration-300 cursor-pointer`}
                         >
                             Simulator
-                        </a>
+                        </Link>
                     </div>
                 </div>
             )}
