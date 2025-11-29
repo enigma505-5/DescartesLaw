@@ -1,3 +1,5 @@
+ENG
+
 # DescartesLaw
 
 A tool to measure Descartes's Law for optical systems. This application utilizes React, TypeScript, and Tailwind CSS to provide a visually engaging and interactive experience for understanding the principles of optics.
@@ -99,5 +101,106 @@ License not specified. All rights reserved to the owner.
     - TypeScript
     - Tailwind CSS
     - OGL
+------------------------------------------------------------------------------------------------------------------------------------------------
+FR
+# DescartesLaw
+
+Un outil pour mesurer la loi de Descartes pour les systèmes optiques. Cette application utilise React, TypeScript et Tailwind CSS pour offrir une expérience visuellement attrayante et interactive pour comprendre les principes de l’optique.
+
+## Key Features & Benefits
+
+- **Simulation interactive:** Démontre visuellement comment les rayons lumineux se comportent lorsqu’ils traversent différents milieux.
+- **Calculs en temps réel:** Calcule automatiquement les angles d'incidence et de réfraction en fonction des paramètres ajustables par l'utilisateur.
+- **Interface conviviale:** Design intuitif construit avec React et Tailwind CSS pour une expérience utilisateur fluide.
+- **Outil éducatif:** Idéal pour les étudiants, les enseignants et toute personne souhaitant explorer les bases de l’optique.
+
+## Prerequisites & Dependencies
+
+Avant de commencer, assurez-vous d’avoir installé :
+
+- **Node.js:** Version 18 ou supérieure recommandée.
+- **npm:** Node Package Manager.
+- **Git:** Pour le contrôle de version et le clonage du dépôt.
+
+## Installation & Setup Instructions
+
+Suivez ces étapes pour lancer le projet :
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/enigma505-5/DescartesLaw.git
+   cd DescartesLaw
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+  Cela lancera l'application en mode développement, généralement accessible à l'adresse `http://localhost:5173`.
+
+## Exemples d'utilisation
+
+Une fois l'application lancée, vous pouvez :
+
+- Ajustez l'angle d'incidence du rayon lumineux.
+- Modifiez les indices de réfraction des deux milieux.
+- Observez l'angle de réfraction résultant et le trajet du rayon lumineux.
+  
+## Options de configuration
+
+La configuration de l'application peut être ajustée via des variables d'environnement (fonctionnalité actuellement non implémentée) et directement dans les composants React. Par exemple, les indices de réfraction par défaut peuvent être modifiés directement dans le code du composant.
+
+## Structure du projet
 
 ```
+├── .gitignore
+├── README.md
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+└── src/
+    ├── App.css
+    ├── App.tsx
+    └── components/
+        ├── layout.tsx
+        └── ui/
+            ├── badge.tsx
+            ├── button.tsx
+            ├── landingconte nt.tsx
+            ├── lightrays.tsx
+            ├── navbar.tsx
+    ├── index.css
+    ├── main.tsx
+    └── pages/
+```
+
+- **`src/`:** Contient le code source principal de l'application.
+- **`src/App.tsx`:** Le composant principal de l'application.
+- **`src/components/`:** Contient les composants d'interface utilisateur réutilisables.
+- **`index.html`:** Le point d'entrée HTML principal.
+- **`package.json`:** Contient les métadonnées et les dépendances du projet.
+  
+## Consignes de contribution
+
+Nous encourageons les contributions pour améliorer DescartesLaw ! Veuillez patienter jusqu'à ce que cette option soit disponible.
+
+Veuillez vous assurer que votre code respecte les normes de codage du projet et inclut des tests appropriés.
+
+## Informations sur la licence
+
+Licence non spécifiée. Tous droits réservés au propriétaire.
+
+## Remerciements
+
+Ce projet utilise les bibliothèques open source suivantes :
+- React
+- TypeScript
+- Tailwind CSS
+- OGL
