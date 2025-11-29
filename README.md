@@ -1,4 +1,3 @@
-md
 # DescartesLaw
 
 A tool to measure Descartes's Law for optical systems. This application utilizes React, TypeScript, and Tailwind CSS to provide a visually engaging and interactive experience for understanding the principles of optics.
