@@ -1,75 +1,104 @@
-# React + TypeScript + Vite
+md
+# DescartesLaw
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A tool to measure Descartes's Law for optical systems. This application utilizes React, TypeScript, and Tailwind CSS to provide a visually engaging and interactive experience for understanding the principles of optics.
 
-Currently, two official plugins are available:
+## Key Features & Benefits
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Interactive Simulation:** Visually demonstrate how light rays behave when passing through different mediums.
+- **Real-time Calculations:** Automatically calculates angles of incidence and refraction based on user-adjustable parameters.
+- **User-Friendly Interface:** Intuitive design built with React and Tailwind CSS for a seamless user experience.
+- **Educational Tool:** Ideal for students, educators, and anyone interested in exploring the fundamentals of optics.
 
-## React Compiler
+## Prerequisites & Dependencies
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Before you begin, ensure you have the following installed:
 
-Note: This will impact Vite dev & build performances.
+- **Node.js:** Version 18 or higher is recommended.  Download from [nodejs.org](https://nodejs.org/).
+- **npm:**  Node Package Manager (usually installed with Node.js).
+- **Git:** For version control and cloning the repository. Download from [git-scm.com](https://git-scm.com/).
 
-## Expanding the ESLint configuration
+## Installation & Setup Instructions
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Follow these steps to get the project up and running:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/enigma505-5/DescartesLaw.git
+   cd DescartesLaw
+   ```
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+   This will start the application in development mode, usually accessible at `http://localhost:5173`.
+
+## Usage Examples
+
+Once the application is running, you can:
+
+- Adjust the angle of incidence of the light ray.
+- Modify the refractive indices of the two mediums.
+- Observe the resulting angle of refraction and the path of the light ray.
+
+## Configuration Options
+
+The application's configuration can be adjusted through environment variables (not currently implemented) and within the React components themselves. For example, the default refractive indices can be modified directly in the component code.
+
+## Project Structure
+
+```
+├── .gitignore
+├── README.md
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+└── src/
+    ├── App.css
+    ├── App.tsx
+    └── components/
+        ├── layout.tsx
+        └── ui/
+            ├── badge.tsx
+            ├── button.tsx
+            ├── landingconte nt.tsx
+            ├── lightrays.tsx
+            ├── navbar.tsx
+    ├── index.css
+    ├── main.tsx
+    └── pages/
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **`src/`:** Contains the main source code for the application.
+- **`src/App.tsx`:** The main application component.
+- **`src/components/`:** Houses reusable UI components.
+- **`index.html`:** The main HTML entry point.
+- **`package.json`:** Contains project metadata and dependencies.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Contributing Guidelines
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+We welcome contributions to improve DescartesLaw!, wait until this option is available.
+
+Please ensure your code adheres to the project's coding standards and includes appropriate tests.
+
+## License Information
+
+License not specified. All rights reserved to the owner.
+
+## Acknowledgments
+
+- This project utilizes the following open-source libraries:
+    - React
+    - TypeScript
+    - Tailwind CSS
+    - OGL
+
 ```
